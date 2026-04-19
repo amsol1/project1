@@ -1,62 +1,161 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Portofolio Saya</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-    }
-    .project {
-      background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahmad Solichin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #cbd5e1;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: white;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Ahmad Solichin</h1>
-  <p>Android Developer | Backend Developer</p>
+    <h1>Ahmad Solichin</h1>
+    <p>Android Developer | Backend Developer | Firebase Specialist</p>
 </header>
 
 <section>
-  <h2>Tentang Saya</h2>
-  <p>Saya adalah developer yang fokus pada Android, Firebase, dan backend.</p>
+    <h2>Tentang Saya</h2>
+    <div class="card">
+        <p>
+            Saya adalah developer yang berfokus pada pengembangan aplikasi Android,
+            backend system, dan integrasi Firebase. Berpengalaman dalam membangun
+            aplikasi real-time seperti GPS tracker, WhatsApp bot, dan sistem monitoring.
+        </p>
+    </div>
 </section>
 
 <section>
-  <h2>Project</h2>
-  
-  <div class="project">
-    <h3>Aplikasi GPS Tracker</h3>
-    <p>Menggunakan Firebase realtime untuk tracking lokasi.</p>
-  </div>
+    <h2>Keahlian</h2>
+    <div class="card skills">
+        <span>Java</span>
+        <span>Android Studio</span>
+        <span>Firebase</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>API Integration</span>
+        <span>REST API</span>
+    </div>
+</section>
 
-  <div class="project">
-    <h3>WhatsApp Bot Multi User</h3>
-    <p>Menggunakan Node.js dan Baileys.</p>
-  </div>
+<section>
+    <h2>Pengalaman / Project</h2>
+
+    <div class="card">
+        <h3>Aplikasi GPS Tracker</h3>
+        <p>
+            Aplikasi tracking lokasi real-time menggunakan Firebase Realtime Database.
+            Fitur: live tracking, notifikasi, dan monitoring user.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>WhatsApp Bot Multi User</h3>
+        <p>
+            Sistem bot WhatsApp menggunakan Node.js dan Baileys dengan fitur multi-user,
+            login QR, dan dashboard admin.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Sistem Kontrol Mesin Cuci</h3>
+        <p>
+            Aplikasi Android untuk kontrol mesin cuci menggunakan Firebase dengan fitur
+            timer, pause/resume, dan notifikasi otomatis.
+        </p>
+    </div>
 
 </section>
 
 <section>
-  <h2>Kontak</h2>
-  <p>Email: emailkamu@gmail.com</p>
+    <h2>Pendidikan</h2>
+    <div class="card">
+        <p>Tambahkan pendidikan kamu di sini</p>
+    </div>
 </section>
+
+<section>
+    <h2>Kontak</h2>
+    <div class="card">
+        <p>Email: emailkamu@gmail.com</p>
+        <p>GitHub: github.com/username</p>
+        <p>LinkedIn: linkedin.com/in/username</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ahmad Solichin</p>
+</footer>
 
 </body>
 </html>
