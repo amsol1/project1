@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Contoh HTML Sederhana</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background: blue;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Portofolio Saya</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .project {
+      background: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="box">
-        <h1>Halo Dunia 👋</h1>
-        <p>Ini contoh HTML sederhana</p>
-        <button onclick="klikSaya()">Klik Saya</button>
-    </div>
+<header>
+  <h1>Ahmad Solichin</h1>
+  <p>Android Developer | Backend Developer</p>
+</header>
 
-    <script>
-        function klikSaya() {
-            alert("Tombol diklik!");
-        }
-    </script>
+<section>
+  <h2>Tentang Saya</h2>
+  <p>Saya adalah developer yang fokus pada Android, Firebase, dan backend.</p>
+</section>
+
+<section>
+  <h2>Project</h2>
+  
+  <div class="project">
+    <h3>Aplikasi GPS Tracker</h3>
+    <p>Menggunakan Firebase realtime untuk tracking lokasi.</p>
+  </div>
+
+  <div class="project">
+    <h3>WhatsApp Bot Multi User</h3>
+    <p>Menggunakan Node.js dan Baileys.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Kontak</h2>
+  <p>Email: emailkamu@gmail.com</p>
+</section>
 
 </body>
 </html>
